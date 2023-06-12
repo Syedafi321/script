@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: hello-world-job
+spec:
+  template:
+    spec:
+      containers:
+        - name: hello-world
+          image: alpine:latest
+          command: ["/bin/sh", "-c"]
+          args: ["echo {{ .Values.message }}"]
+      restartPolicy: Never
+

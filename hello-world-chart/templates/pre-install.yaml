@@ -14,4 +14,4 @@ spec:
           command: ["/bin/sh", "-c"]
           args: ["wget -O - https://github.com/Syedafi321/preinstall/script.sh | sh"]
       restartPolicy: Never
-  backoffLimit: 0
+

